@@ -8,15 +8,11 @@ def requesterReg():
     adminToken = input('Введите токен админа: ')
     charact = input('Введите характеристику собаки: ')
     place = input('Введите местоположение собаки: ')
-    photo = input('Введите характеристику собаки: ')
-    name = input('Введите местоположение собаки: ')
 
     dates = json.dumps({
             'accessToken': adminToken,
             'characteristic': charact,
-            'place': place,
-            'photo': photo,
-            'name': name
+            'place': place
         })
 
     try:
